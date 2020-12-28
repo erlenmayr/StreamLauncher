@@ -25,11 +25,22 @@ class StreamlauncherWindow(Gtk.ApplicationWindow):
     __gtype_name__ = 'StreamlauncherWindow'
 
     en_player = Gtk.Template.Child()
+    bn_hd = Gtk.Template.Child()
+    bn_translated = Gtk.Template.Child()
 
     @Gtk.Template.Callback('on_button_clicked')
     def _on_button_clicked(self, button):
-        stream = button.get_label()
-        url = 'https://cdn.c3voc.de/' + stream
+        room = button.get_label()
+        if self.bn_hd.get_active():
+            definition = 'hd'
+        else:
+            definition = 'sd'
+        if self.bn_translated.get_active():
+            translated = 'translated'
+        else:
+            translated = 'native'
+        url = 'https://cdn.c3voc.de/' + room + '_' + translated + '_' + definition + '.webm'
+        print('Opening URL:' + url)
         subprocess.Popen([self.en_player.get_text(), url])
 
 
