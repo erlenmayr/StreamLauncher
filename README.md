@@ -30,4 +30,4 @@ I recommend Gnome Builder (should be installed by gnome-devel) to easily hack
 
 ## Screenshot
 
-![Screenshot](web/screenshot.png "Screenshot")
+![Screenshot](web/screenshot2.png "Screenshot")
