@@ -125,6 +125,7 @@
           <object class="GtkEntry" id="en_player">
             <property name="visible">True</property>
             <property name="can-focus">True</property>
+            <property name="tooltip-text" translatable="yes">Put your video player command here.</property>
             <property name="text" translatable="yes">celluloid</property>
           </object>
         </child>
