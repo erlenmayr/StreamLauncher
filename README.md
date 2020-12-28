@@ -27,3 +27,7 @@ $ ninja -C build install
 ### Hacking
 
 I recommend Gnome Builder (should be installed by gnome-devel) to easily hack
+
+## Screenshots
+
+![Screenshot](web/screenshot_2020-12-28 13-42-00.png "Screenshot")
