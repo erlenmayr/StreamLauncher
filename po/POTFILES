@@ -1,0 +1,7 @@
+data/de.ccc.streamlauncher.desktop.in
+data/de.ccc.streamlauncher.appdata.xml.in
+data/de.ccc.streamlauncher.gschema.xml
+src/window.ui
+src/main.py
+src/window.py
+
